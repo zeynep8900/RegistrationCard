@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="registration.css">
+    <script src="./registration.js"> </script>
+</head>
+
+<body>
+
+    <img class="background-image" src="https://raw.githubusercontent.com/southriver/se3355-intro/main/static/photo-1692168148018-315b6920a699.avif" alt="">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html" target="_blank">Home</a></li>
+                <li><a href="categories.html" target="_blank">Categories</a></li>
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="form-container">
+        <form id="registrationForm" onsubmit="submitForm()">
+
+
+            <div class="form-group">
+                <label class="form-label"> Name</label>
+
+                <div class="form-item">
+                    <div class="label-inputs">
+                        <input type="text-input" id="firstName" name="firstName" required>
+                        <label class="name-label bottom-label" for="firstName">First Name </label>
+                        
+                    </div>
+
+                    <div class="label-inputs">
+                        <input type="text-input" id="lastName" name="lastName" required>
+                        <label class="name-label bottom-label" for="lastName">Last Name</label>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <label class="form-label">Company</label>
+                <div class="form-item">
+                    <select id="company-select" name="company" required>
+                        <option value="" selected disabled>--Choose an option--</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <label class="form-label" for="email">Email</label>
+                <div class="form-item">
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="Phone"> Phone</label>
+
+                <div class="form-item">
+                    <div class="label-inputs area-code-inputs">
+                        <select id="areaCode-select" name="areaCode" required>
+                        </select>
+                        <label class="phone-label bottom-label" for="areaCode-select">Area Code</label>
+                    </div>
+
+                    <div class="label-inputs phone-inputs">
+                        <input type="text" pattern="[0-9]{10}" id="phone" name="phone" required>
+                        <label class="phone-label bottom-label" for="phone">Phone</label>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="form-group">
+                <label class="form-label" for="subject">Subject</label>
+                <div class="form-item">
+                    <select id="subject-select" name="subject" required>
+                        <option value="" selected disabled>--Choose an option--</option>
+                    </select>
+                </div>
+            </div>
+
+            <label>Are you a beginner?</label>
+            <div class="radio-group">
+                <input type="radio" id="yes" name="beginner" value="yes" required>
+                <label for="yes">Yes</label>
+
+                <input type="radio" id="no" name="beginner" value="no" required>
+                <label for="no">No</label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
