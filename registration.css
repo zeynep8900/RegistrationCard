@@ -98,43 +98,12 @@ button:hover {
     background-color: #45a049;
 }
 
-.name-group {
-    display: flex;
-    gap: 30px; 
-}
+
 .name-label,
 .phone-label{
     color: #555; 
     font-size: small;
     
-}
-.name-inputs{
-    color: #555;
-    font-size: small;
-    
-}
-
-.email {
-    display: flex;
-    gap: 35px; 
-    width: 490px;
-}
-
-.phone-group {
-    display: flex;
-    gap: 30px; 
-    
-}
-.phone-inputs{
-    width: 215px;
-}
-.company {
-    display: flex;
-    gap: 10px; 
-    width: 490px;
-}
-.subject {
-    display: flex;
 }
 
 #company-select,
